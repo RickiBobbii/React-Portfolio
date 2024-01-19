@@ -6,8 +6,9 @@ function NavTabs() {
   const currentPage = useLocation().pathname;
 
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
+    // added fixed-top
+    <ul className="nav nav-pills nav-justified fixed-top bg-dark">
+      <li className="nav-link">
         <Link
           to="/"
           // This is a conditional (ternary) operator that checks to see if the current page is "Home"
@@ -17,7 +18,7 @@ function NavTabs() {
           Home
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="nav-link">
         <Link
           to="/About"
           // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
@@ -26,16 +27,16 @@ function NavTabs() {
           About
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="nav-link">
         <Link
-          to="/Blog"
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === '/Blog' ? 'nav-link active' : 'nav-link'}
+          to="/Portfolio"
+          // Check to see if the currentPage is `Portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Blog
+          Portfolio
         </Link>
       </li>
-      <li className="nav-item">
+      <li className="nav-link">
         <Link
           to="/Contact"
           // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
