@@ -1,6 +1,18 @@
+import IMAGES from '../assets/home-imageAI.jpg'
+
 export default function Home() {
   return (
-    <div>
+    <div
+    // className='mw-100 p-5 text-center shadow-1-strong rounded mb-5 text-white'
+    // style={{
+    //   height: "100vh",
+    //   //width: "100%",
+    //   backgroundSize:  'cover',
+    //   backgroundPosition: 'bottom',
+    //   // objectFit: 'cover',
+    //   backgroundImage: `url(${IMAGES})`
+    // }}
+    >
       <h1>Home Page</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
