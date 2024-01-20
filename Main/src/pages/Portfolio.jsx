@@ -1,22 +1,69 @@
+import React from "react";
+import Project from "../components/Project";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../index.css";
+
 export default function Portfolio() {
+  const projects = [
+    {
+      id: 1,
+      name: "ChatSpace",
+      description: "Forum with live chat functionality",
+      technologies: "HTML, CSS, JavaScript, Socket.io, Node.js, Express.js, MySQL, Sequelize, Handlebars.js, Heroku, JawsDB",
+      githubLink: "https://github.com/RickiBobbii/ChatSpace",
+      appLink: "https://quiet-ocean-06513-0d1db6ff8a7d.herokuapp.com/login",
+      image: "src/assets/ChatSpace.png"
+
+    },
+    { 
+      id: 2,
+      name: "Project 2",
+      description: "This is another project",
+      technologies: "HTML, CSS, JavaScript",
+      githubLink: "#",
+      appLink: "#",
+    
+    },
+    { 
+      id: 3,
+      name: "Project 3",
+      description: "This is a project",
+      technologies: "HTML, CSS, JavaScript",
+      githubLink: "#",
+      appLink: "#",
+  
+    },
+    { 
+      id: 4,
+      name: "Project 4",
+      description: "This is another project",
+      technologies: "HTML, CSS, JavaScript",
+      githubLink: "#",
+      appLink: "#",
+    
+    },
+    { 
+      id: 5,
+      name: "Project 5",
+      description: "This is a project",
+      technologies: "HTML, CSS, JavaScript",
+      githubLink: "#",
+      appLink: "#",
+    
+    },
+    { 
+      id: 6,
+      name: "Project 6",
+      description: "This is another project",
+      technologies: "HTML, CSS, JavaScript",
+      githubLink: "#",
+      appLink: "#",
+  
+    },
+  ];
   return (
     <div>
-      <h1>Portfolio</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+      <Project projects={projects}/>
     </div>
   );
 }
