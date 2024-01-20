@@ -29,6 +29,14 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #51248a;
+  color: rgba(251, 243, 243, 0.934);
+  /* TEST background-size: cover; */
+  background-size: center;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url(./assets/home-imageAI.jpg);
+
 }
 
 h1 {
@@ -55,13 +63,18 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.image-container {
+  object-fit: cover;
+  background-image: url(./assets/home-imageAI.jpg);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #b1b1be;
   }
   button {
     background-color: #f9f9f9;
