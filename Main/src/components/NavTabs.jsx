@@ -7,7 +7,7 @@ function NavTabs() {
 
   return (
     // TEST Navbar
-    <nav className="navbar navbar-expand-xl navbar-dark bg-dark fixed-top">
+    <nav className="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
         <a className="navbar-brand fs-1" href="/">
           Dusty Gray

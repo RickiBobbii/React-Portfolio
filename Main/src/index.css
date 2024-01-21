@@ -6,6 +6,10 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  /* width issue */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -25,17 +29,18 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  /* Causing display issue */
+  /* display: flex; */
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
   background-color: #51248a;
   color: rgba(251, 243, 243, 0.934);
   /* TEST background-size: cover; */
-  background-size: center;
+  /* background-size: center;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-image: url(./assets/home-imageAI.jpg);
+  background-image: url(./assets/home-imageAI.jpg); */
 
 }
 
