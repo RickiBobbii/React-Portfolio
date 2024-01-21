@@ -9,7 +9,7 @@ function NavTabs() {
     // TEST Navbar
     <nav className="navbar navbar-expand-xl navbar-dark bg-dark sticky-top">
       <div className="container-fluid">
-        <a className="navbar-brand fs-1" href="/">
+        <a className="navbar-brand fs-1 ps-4" href="/">
           Dusty Gray
         </a>
         <button

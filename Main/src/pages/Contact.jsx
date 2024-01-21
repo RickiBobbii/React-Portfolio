@@ -1,20 +1,49 @@
+import React from "react";
+import ContactInfo from "../components/ContactInfo";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "../index.css";
+
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    
+    <section>
+      <div className="flex-row">
+        <h2 className="text-center mt-4">Hey There</h2>
+      </div>
+
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+      <h1 className="text-center mb-4">Contact Me</h1>
+        <div className="col col-md-6">
+          <form className="justify-content-center" style={{ }}>
+            {/* Name */}
+            <div className="form-outline mb-4">
+              <input type="text" id="contact-name" className="form-control" placeholder="Name"/>
+              <label className="form-label"></label>
+            </div>
+            {/* Email */}
+            <div data-mdb-input-init className="form-outline mb-4">
+              <input type="email" id="contact-email" className="form-control" placeholder="Email" />
+              <label className="form-label"></label>
+            </div>
+            {/* Message */}
+            <div data-mdb-input-init className="form-outline mb-4">
+              <textarea
+                className="form-control"
+                id="form4Example3"
+                rows="4"
+                placeholder="Message"
+              ></textarea>
+              <label className="form-label"></label>
+            </div>
+            {/* Send Button */}
+            <button type="button" className="btn btn-primary btn-block mb-4">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
+    </section>
   );
 }
