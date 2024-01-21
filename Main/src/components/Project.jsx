@@ -1,3 +1,5 @@
+import { FaGithub, FaLink } from "react-icons/fa";
+
 export default function Project(props) {
   const cardStyle = {
     width: "300px",
@@ -21,17 +23,21 @@ export default function Project(props) {
                         <div className="card m-3 p-2"  style={cardStyle}>
                         <img className="card-img-top" src={project.image} alt="Card cap" />
                         <div className="card-body">
-                            <h5 className="card-header">{project.name}</h5>
+                            <h5 className="card-header text-center bg-info-subtle">{project.name}</h5>
                             <p className="card-text">Description: {project.description}</p>
                             <p className="card-text">Technologies: {project.technologies}</p>
-                            <a href={project.githubLink} className="btn btn-primary">
-                            {" "}
-                            Github
-                            </a>
-                            <a href={project.appLink} className="btn btn-success">
-                            {" "}
-                            AppLink
-                            </a>
+                            <div className="d-flex justify-content-around">
+                                <a href={project.githubLink} className="btn btn-info pb-2">
+                                <i className="p-1 fs-5"> <FaGithub /></i>
+                                {" "}
+                                Github
+                                </a>
+                                <a href={project.appLink} className="btn btn-secondary pb-2">
+                                <i className="p-1 fs-5"> <FaLink /></i>
+                                {" "}
+                                AppLink
+                                </a>
+                            </div>
                         </div>
                         </div>
                     </div>                        
