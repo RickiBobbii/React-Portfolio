@@ -2,14 +2,8 @@ import { FaGithub, FaLink } from "react-icons/fa";
 
 export default function Project(props) {
   const cardStyle = {
-    width: "300px",
+    width: "310px",
   };
-
-  // Helper function that generates a random width for our placeholder images
-  // const randomWidth = () => {
-  //   const number = Math.random() * (300 - 200) + 200;
-  //   return number.toString().split('.')[0];
-  // };
 
   return (
     <div className="container">
@@ -19,13 +13,17 @@ export default function Project(props) {
            
 
                     {props.projects.map((project) => (
-                    <div className="col d-flex justify-content-center" key={project.id}>   
+                    <div className="col d-flex justify-content-center" key={project.id}>
+                           {/* Test column cards --  col d-flex justify-content-center*/}
+                    
                         <div className="card m-3 p-2"  style={cardStyle}>
-                        <img className="card-img-top" src={project.image} alt="Card cap" />
+                        <img className="rounded border border-black" style={{height: 200}} src={project.image} alt="Image caption" />
                         <div className="card-body">
                             <h5 className="card-header text-center bg-info-subtle">{project.name}</h5>
-                            <p className="card-text">Description: {project.description}</p>
-                            <p className="card-text">Technologies: {project.technologies}</p>
+                            <h6 class="card-subtitle my-2 text-body-secondary">Description:</h6>
+                            <p className="card-text">{project.description}</p>
+                            <h6 class="card-subtitle my-2 text-body-secondary">Technologies:</h6>
+                            <p className="card-text">{project.technologies}</p>
                             <div className="d-flex justify-content-around">
                                 <a href={project.githubLink} className="btn btn-info pb-2">
                                 <i className="p-1 fs-5"> <FaGithub /></i>
