@@ -20,9 +20,9 @@ export default function Project(props) {
                         <img className="rounded border border-black" style={{height: 200}} src={project.image} alt="Image caption" />
                         <div className="card-body">
                             <h5 className="card-header text-center bg-info-subtle">{project.name}</h5>
-                            <h6 class="card-subtitle my-2 text-body-secondary">Description:</h6>
+                            <h6 className="card-subtitle my-2 text-body-secondary">Description:</h6>
                             <p className="card-text">{project.description}</p>
-                            <h6 class="card-subtitle my-2 text-body-secondary">Technologies:</h6>
+                            <h6 className="card-subtitle my-2 text-body-secondary">Technologies:</h6>
                             <p className="card-text">{project.technologies}</p>
                             <div className="d-flex justify-content-around">
                                 <a href={project.githubLink} className="btn btn-info pb-2">
