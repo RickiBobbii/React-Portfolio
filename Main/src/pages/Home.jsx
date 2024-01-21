@@ -2,7 +2,7 @@ import IMAGES from '../assets/home-imageAI.jpg'
 
 export default function Home() {
   return (
-    <div
+    <div className='vh-100'
     // className='mw-100 p-5 text-center shadow-1-strong rounded mb-5 text-white'
     // style={{
     //   height: "100vh",
