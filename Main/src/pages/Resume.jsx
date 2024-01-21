@@ -1,6 +1,6 @@
 import IMAGES from '../assets/home-imageAI.jpg'
 
-export default function Home() {
+export default function Resume() {
   return (
     <div className='vh-100'
     // className='mw-100 p-5 text-center shadow-1-strong rounded mb-5 text-white'
@@ -13,7 +13,7 @@ export default function Home() {
     //   backgroundImage: `url(${IMAGES})`
     // }}
     >
-      <h1>Home Page</h1>
+      <h1>Resume Page</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi

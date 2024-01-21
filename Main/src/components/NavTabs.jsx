@@ -27,18 +27,10 @@ function NavTabs() {
           <ul className="navbar-nav ms-auto mb-2 mb-xl-0">
             <li className="nav-item fs-5 mx-2">
               <Link
-                to="/"
-                // This is a conditional (ternary) operator that checks to see if the current page is "Home"
-                // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
-                className={currentPage === "/" ? "nav-link active" : "nav-link"}
-              >
-                Home
-              </Link>
-            </li>
-            <li className="nav-item fs-5 mx-2">
-              <Link
                 to="/About"
                 className={
+                  // This is a conditional (ternary) operator that checks to see if the current page is "About"
+                  // If it is, we set the current page to 'nav-link-active', otherwise we set it to 'nav-link'
                   currentPage === "/About" ? "nav-link active" : "nav-link"
                 }
               >
@@ -63,6 +55,16 @@ function NavTabs() {
                 }
               >
                 Contact
+              </Link>
+            </li>
+            <li className="nav-item fs-5 mx-2">
+              <Link
+                to="/Resume"
+                className={
+                  currentPage === "/Resume" ? "nav-link active" : "nav-link"
+                }
+              >
+                Resume
               </Link>
             </li>
           </ul>
