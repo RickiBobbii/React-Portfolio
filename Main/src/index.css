@@ -79,6 +79,11 @@ button:focus-visible {
   list-style: none;
 }
 
+.line {
+  border-top: 3px solid;
+  color: black;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

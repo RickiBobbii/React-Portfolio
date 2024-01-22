@@ -1,31 +1,39 @@
-import IMAGES from '../assets/home-imageAI.jpg'
+import { FaLinkedin, FaGithub, FaEnvelope, FaFileAlt } from "react-icons/fa";
+import resume from "../assets/Dusty-Gray-Resume.pdf";
 
 export default function Resume() {
   return (
-    <div className='vh-100'
-    // className='mw-100 p-5 text-center shadow-1-strong rounded mb-5 text-white'
-    // style={{
-    //   height: "100vh",
-    //   //width: "100%",
-    //   backgroundSize:  'cover',
-    //   backgroundPosition: 'bottom',
-    //   // objectFit: 'cover',
-    //   backgroundImage: `url(${IMAGES})`
-    // }}
-    >
-      <h1>Resume Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
+    <div className="container vh-100 pt-5">
+      <div className="row text-center justify-content-center">
+        <div className="col col-md-8 mb-5">
+          <div className="rounded shadow-sm py-4 px-4 bg-white text-dark bg-opacity-50">
+            <h1 className="mb-3">Resume</h1>
+            <a href={resume} className="">
+              <i className="social-links">
+                <FaFileAlt />
+              </i>
+            </a>
+            <h2 className="fs-3 text-uppercase text-muted line mt-4">
+              Full Stack Web Developer
+            </h2>
+            <h2>Front-End Skills</h2>
+            <p className="fs-5">
+              HTML5, CSS, JavaScript, jQuery, React, Bootstrap, Handlebars,
+              Tailwind, Bulma, PWA, IndexedDB, RESTful APIs, GIT
+            </p>
+            <h2>Back-End Skills</h2>
+            <p className="fs-5">
+              Node.js, Express, Express-Session, MySQL, Sequelize, MongoDB, Mongoose, NoSQL,
+              Bcrypt, Dotenv
+            </p>
+            <h3>Developer Tools/ Platforms</h3>
+            <p className="fs-5">
+              Visual Studio Code, GitHub, Heroku, GitLab, Insomnia, MongoDB
+              Compass, Slack, Zoom, Discord, Google Workspace, Microsoft Office
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
