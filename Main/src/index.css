@@ -73,6 +73,12 @@ button:focus-visible {
   background-image: url(./assets/home-imageAI.jpg);
 }
 
+.social-links {
+  display: inline-block;
+  font-size: 40px;
+  list-style: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

@@ -3,11 +3,7 @@ import profilePic from "../assets/profilePic.jpg";
 
 export default function About() {
 
-  const socialLinks = {
-    height: "2rem",
-    width: "2rem",
-  };
-
+  
   return (
    
 
@@ -38,21 +34,21 @@ export default function About() {
             <ul className="mb-0 list-inline mt-3">
               <li className="list-inline-item">
                 <a href="#" className="">
-                  <i className="fs-5">
+                  <i className="social-links">
                     <FaGithub />
                   </i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#" className="">
-                  <i className="fs-5">
+                <a href="mailto:rickibobbiii@gmail.com" className="">
+                  <i className="social-links">
                     <FaEnvelope />
                   </i>
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#" className="socialLinks">
-                  <i className="fs-5">
+                <a href="#" className="">
+                  <i className="social-links">
                     <FaLinkedin />
                   </i>
                 </a>
