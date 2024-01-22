@@ -2,13 +2,11 @@
   "name": "mini-project-main",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "",
   "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "concurrently \"cd client && npm run build\" \"cd client && npm start\"", 
-    "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "cd server && npm i && cd ../client && npm i",
+    "install": "cd client && npm i",
     "client": "cd client && npm start"
   },
   "keywords": [],
