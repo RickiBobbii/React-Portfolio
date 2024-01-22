@@ -11,7 +11,7 @@ const Footer = () => {
             &copy; 2024 Made by Dusty Gray.
             </div>
             <div className="">
-                <a className="mx-3" href="https://github.com/your-github-profile">
+                <a className="mx-3" href="https://github.com/RickiBobbii">
                 <i className="social-links">
                     <FaGithub />
                     </i>
@@ -21,7 +21,7 @@ const Footer = () => {
                     <FaEnvelope />
                   </i>
                 </a>
-                <a className="mx-3" href="https://www.linkedin.com/in/your-linkedin-profile">
+                <a className="mx-3" href="https://www.linkedin.com/in/dustin-gray-517920a7/">
                 <i className="social-links">
                     <FaLinkedin />
                     </i>

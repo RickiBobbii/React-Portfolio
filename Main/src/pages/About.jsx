@@ -33,7 +33,7 @@ export default function About() {
             </p>
             <ul className="mb-0 list-inline mt-3">
               <li className="list-inline-item">
-                <a href="#" className="">
+                <a href="https://github.com/RickiBobbii" className="">
                   <i className="social-links">
                     <FaGithub />
                   </i>
@@ -47,7 +47,7 @@ export default function About() {
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="#" className="">
+                <a href="https://www.linkedin.com/in/dustin-gray-517920a7/" className="">
                   <i className="social-links">
                     <FaLinkedin />
                   </i>
