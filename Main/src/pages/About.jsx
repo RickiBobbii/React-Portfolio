@@ -10,7 +10,7 @@ export default function About() {
     <div className="container vh-100 pt-5">
       <div className="row text-center justify-content-center">
         <div className="col col-md-8 mb-5">
-          <div className="rounded shadow-sm py-5 px-4 bg-white p-2 text-dark bg-opacity-50">
+          <div className="rounded shadow-sm py-5 px-4 bg-white text-dark bg-opacity-50">
             <img
               src={profilePic}
               alt=""
